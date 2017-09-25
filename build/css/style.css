@@ -404,7 +404,7 @@ template {
   display: none;
 }
 body {
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   color: #000;
   background: #f8f5f2;
 }
@@ -1452,9 +1452,10 @@ input[type="password"] {
     padding: 0;
   }
   .main-nav__book img {
-    float: left;
+    position: absolute;
+    left: 40px;
     height: 88px;
-    margin-right: 20px;
+    width: 88px ;
   }
   .main-nav__book-closed {
     display: none;
@@ -1469,16 +1470,16 @@ input[type="password"] {
     margin: 0px;
     box-sizing: border-box;
     width: 300px;
-    margin-top: 27px;
-    margin-right: 90px;
-    padding-left: 30px;
+    margin-top: 25px;
+    margin-right: 65px;
+    padding-left: 148px;
   }
   .main-nav__book::before {
     content: "";
     display: block;
     position: absolute;
-    top: 57px;
-    right: -70px;
+    top: 55px;
+    right: -45px;
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
     width: 14px;
@@ -1486,6 +1487,16 @@ input[type="password"] {
     background: transparent;
     border-top: 1px solid #acadb5;
     border-left: 1px solid #acadb5;
+  }
+  .main-nav__book::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 1px;
+    height: 130px;
+    background: #acadb5;
   }
   .main-nav__book figcaption {
     float: right;
