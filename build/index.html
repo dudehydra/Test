@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Дом книги</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="page-header page-header--opened page-header--nojs">
+		<div class="page-header__logo">
+			<picture>
+	          <source media="(min-width:794px)" srcset="img/logo.png">
+	          <img alt="Dom-knigi-logo" src="img/mobile-logo.png" class="page-header__logo-1">
+        	</picture>
+        	<picture>
+	          <source media="(min-width:794px)" srcset="img/logo-2.png">
+	          <img alt="logo" src="img/mobile-logo-2.png" class="page-header__logo-2">
+        	</picture>
+		</div>
+		<div class="main-nav">
+			<button class="main-nav__toggle" type="button">
+				Открыть меню
+			</button>
+			<button class="main-nav__city main-nav__city--closed">
+				Казань <span class="desktop">(15)</span>
+			</button>
+			<a href="#" class="main-nav__profile desktop">
+				
+			</a>
+			<button class="main-nav__like desktop">
+				0
+			</button>
+			<a href="" class="main-nav__search">
+				
+			</a>
+			<a href="" class="main-nav__basket">
+				<span class="desktop">5</span>
+			</a>
+			
+			<div class="main-nav__city-list main-nav__city-list--closed">
+				<ul>
+					<li class="main-nav__city-item main-nav__city-item--active"><a href="#"> Казань </a></li>
+					<li class="main-nav__city-item"><a href="#"> Елабуга </a></li>
+					<li class="main-nav__city-item"><a href="#"> Нижнекамск </a></li>
+					<li class="main-nav__city-item"><a href="#"> С.Богатые </a></li>
+					<li class="main-nav__city-item"><a href="#"> Сабы </a></li>
+					<li class="main-nav__city-item"><a href="#"> Бавлы </a></li>
+					<li class="main-nav__city-item"><a href="#"> Вятские поляны </a></li>
+					<li class="main-nav__city-item"><a href="#"> Димитровград </a></li>
+					<li class="main-nav__city-item"><a href="#"> Зеленодольск </a></li>
+				</ul>
+				<ul>
+					<li class="main-nav__city-item"><a href="#"> Йошкар-Ола </a></li>
+					<li class="main-nav__city-item"><a href="#"> Волжск </a></li>
+					<li class="main-nav__city-item"><a href="#"> Н.Челны </a></li>
+					<li class="main-nav__city-item"><a href="#"> ПГТ.Кукмор </a></li>
+					<li class="main-nav__city-item"><a href="#"> Лениногорск </a></li>
+					<li class="main-nav__city-item"><a href="#"> Альметьевск </a></li>
+					<li class="main-nav__city-item"><a href="#"> Малмыж </a></li>
+					<li class="main-nav__city-item"><a href="#"> Менделеевск </a></li>
+					<li class="main-nav__city-item"><a href="#"> Новочебоксарск </a></li>
+					 
+				</ul>
+				<ul>
+					<li class="main-nav__city-item"><a href="#"> Нурлат </a></li>
+					<li class="main-nav__city-item"><a href="#"> Ижевск </a></li>
+					<li class="main-nav__city-item"><a href="#"> Ульяновск </a></li>
+					<li class="main-nav__city-item"><a href="#"> Чебоксары </a></li>
+					 
+				</ul>
+			</div>
+			<div class="main-nav__login main-nav__login--closed">
+				<h2>Вход</h2>
+				<form method="post">
+					<fieldset>
+						<label>ИМЯ/E-MAIL<input type="text" name="login"></label>
+						<label>ИМЯ/E-MAIL<input type="password" name="password"></label>
+				    </fieldset>
+					<input type="submit" value="ВХОД">
+					<a href="#">Регистрация</a>
+				</form>
+			</div>
+
+		</div>
+		<div class="main-nav__wrapper">
+				<ul class="main-nav__items">
+					<li class="main-nav__item">
+						<a href="">О компании</a>
+						<ul class="desktop">
+							<li>Адреса магазинов</li>
+							<li>Вакансии</li>
+							<li>История</li>
+						</ul>
+					</li>
+					<li class="main-nav__item">
+						<a href="">Каталог </a>
+						<ul class="desktop">
+							<li>Книги</li>
+							<li>Канц. товары</li>
+						</ul>
+					</li>
+					<li class="main-nav__item">
+						<a href="">Оптовым клиентам </a>
+						<ul class="desktop">
+							<li>Школам</li>
+							<li>Информационно-методический центр</li>
+						</ul>
+					</li>
+					<li class="main-nav__item">
+						<a href="">Помощь </a>
+						<ul class="desktop">
+							<li>Вопросы и ответы</li>
+							<li>Книги отзывов</li>
+							<li>Акции</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</header>
+	<script >
+		var navMain = document.querySelector('.page-header');
+		var navToggle = document.querySelector('.main-nav__toggle');
+
+		navMain.classList.remove('page-header--nojs');
+
+		navToggle.addEventListener('click', function(){
+			if (navMain.classList.contains('page-header--closed')) {
+				navMain.classList.remove('page-header--closed');
+				navMain.classList.add('page-header--opened');
+			} else {
+				navMain.classList.remove('page-header--opened');
+				navMain.classList.add('page-header--closed');
+			}
+		});
+
+
+		var langToggle = document.querySelector('.main-nav__city');
+		var langMain = document.querySelector('.main-nav__city-list');
+
+		langMain.classList.remove('main-nav--nojs');
+
+		langToggle.addEventListener('click', function() {
+			if (langMain.classList.contains('main-nav__city-list--closed')) {
+				langToggle.classList.remove('main-nav__city--closed');
+				langToggle.classList.add('main-nav__city--opened');
+
+				langMain.classList.remove('main-nav__city-list--closed');
+				langMain.classList.add('main-nav__city-list--opened');
+			} else {
+				langToggle.classList.add('main-nav__city--closed');
+				langToggle.classList.remove('main-nav__city--opened');
+
+				langMain.classList.remove('main-nav__city-list--opened');
+				langMain.classList.add('main-nav__city-list--closed');
+			}
+		});
+
+		var profileToggle = document.querySelector('.main-nav__profile');
+		var profileLogin = document.querySelector('.main-nav__login');
+
+		profileToggle.addEventListener('click', function(event) {
+			event.preventDefault();
+			if (profileLogin.classList.contains('main-nav__login--closed')) {
+				profileLogin.classList.remove('main-nav__login--closed');
+				profileLogin.classList.add('main-nav__login--opened');
+
+			} else {
+				profileLogin.classList.add('main-nav__login--closed');
+				profileLogin.classList.remove('main-nav__login--opened');
+
+			}
+		});
+
+	</script>
+
+
+
+</body>
+</html>
