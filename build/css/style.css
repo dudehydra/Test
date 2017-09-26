@@ -893,6 +893,9 @@ input[type="password"] {
 .main-nav__book {
   display: none;
 }
+.page-header__logo-wrapper img:nth-child(odd) {
+  display: none;
+}
 @media (min-width: 767px) {
   .page-header {
     box-sizing: border-box;
@@ -919,6 +922,12 @@ input[type="password"] {
   .main-nav__new-1 {
     box-sizing: border-box;
     width: 794px;
+  }
+  .page-header__logo-wrapper img:nth-child(even) {
+    display: none;
+  }
+  .page-header__logo-wrapper img:nth-child(odd) {
+    display: inline-block;
   }
   .main-nav {
     flex-wrap: wrap;
