@@ -1272,6 +1272,7 @@ input[type="password"] {
     font-family: "Roboto Medium";
     font-size: 12px;
     line-height: 15px;
+    letter-spacing: 0.5px;
   }
   .main-nav__city-info span {
     font-family: "Roboto Light";
@@ -1279,6 +1280,7 @@ input[type="password"] {
     line-height: 15px;
     border-bottom: 1px dotted #ffffff;
     text-transform: none;
+    margin-left: -5px;
   }
   .main-nav__like-wrapper .main-nav__like {
     width: 186px;
@@ -1292,12 +1294,14 @@ input[type="password"] {
     display: none;
   }
   .main-nav__like-info {
+    line-height: 15px;
     margin-top: 2px;
     margin-left: 40px;
     font-family: "Roboto Medium";
-    line-height: 15px;
+    line-height: 16px;
     font-size: 12px;
     text-align: left;
+    letter-spacing: 0.4px;
   }
   .main-nav__like-info span {
     font-family: "Roboto Light";
@@ -1318,10 +1322,11 @@ input[type="password"] {
     padding: 0;
     font-family: "Roboto Medium";
     font-size: 12px;
-    line-height: 15px;
-    margin-top: 21px;
-    margin-left: 32px;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
     text-align: left;
+    letter-spacing: 1.5px;
   }
   .main-nav__basket-info span {
     font-family: "Roboto Light";
@@ -1364,6 +1369,7 @@ input[type="password"] {
   }
   .main-nav__order sup {
     line-height: 20px;
+    padding-left: 25px;
   }
   .main-nav__order a {
     margin-left: 28px;
@@ -1398,6 +1404,7 @@ input[type="password"] {
     line-height: 24px;
     margin-top: 10px;
     margin-bottom: 50px;
+    padding-right: 63px;
   }
   .slider-item {
     display: none;
@@ -1462,7 +1469,7 @@ input[type="password"] {
   }
   .main-nav__book img {
     position: absolute;
-    left: 40px;
+    left: -3px;
     height: 88px;
     width: 88px ;
   }
@@ -1480,15 +1487,15 @@ input[type="password"] {
     box-sizing: border-box;
     width: 300px;
     margin-top: 25px;
-    margin-right: 65px;
-    padding-left: 148px;
+    margin-right: 31px;
+    padding-left: 104px;
   }
   .main-nav__book::before {
     content: "";
     display: block;
     position: absolute;
     top: 55px;
-    right: -45px;
+    right: -9px;
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
     width: 14px;
@@ -1509,13 +1516,15 @@ input[type="password"] {
   }
   .main-nav__book figcaption {
     float: right;
+    padding-top: 2px;
   }
   .main-nav__book h3 {
     font-family: "Roboto Bold";
     font-size: 16px;
-    line-height: 10px;
+    line-height: 5px;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: -1px;
   }
   .main-nav__author-name {
     font-family: "Roboto Regular";
