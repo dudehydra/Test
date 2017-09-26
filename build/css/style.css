@@ -862,6 +862,30 @@ input[type="password"] {
   padding: 0px 20px;
   padding-right: 25px;
   border-bottom: 3px solid #fff;
+  -webkit-animation-name: fade, slide ;
+          animation-name: fade, slide ;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+}
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translate(500px);
+            transform: translate(500px);
+  }
+  to {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+@keyframes slide {
+  from {
+    -webkit-transform: translate(500px);
+            transform: translate(500px);
+  }
+  to {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
 }
 .main-nav__new-1 span {
   display: inline-block;
@@ -1444,6 +1468,26 @@ input[type="password"] {
     background: #2e3674 url("../img/medin.png") no-repeat;
     background-position: right 50px bottom -320px;
     position: relative;
+    -webkit-animation-name: fade, slide;
+            animation-name: fade, slide;
+    -webkit-animation-duration: 2s, 2s;
+            animation-duration: 2s, 2s;
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .main-nav__new-2 {
     padding: 20px 45px;
