@@ -577,10 +577,10 @@ body {
 .main-nav__city--closed::before {
   content: "";
   position: absolute;
-  top: 27px;
-  left: 120px;
-  width: 8px;
-  height: 8px;
+  top: 30px;
+  left: 115px;
+  width: 6px;
+  height: 6px;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   -webkit-transform: rotate(-135deg);
@@ -970,8 +970,8 @@ input[type="password"] {
     box-sizing: border-box;
   }
   .main-nav__profile::before {
-    top: 22px;
-    left: 30px;
+    top: 23px;
+    left: 31px;
   }
   .main-nav__profile--active::before {
     content: "";
@@ -989,15 +989,15 @@ input[type="password"] {
     box-sizing: border-box;
     width: 83px;
     height: 74px;
-    padding-left: 35px;
-    padding-top: 20px;
+    padding-left: 37px;
+    padding-top: 22px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
   }
   .main-nav .main-nav__basket::before {
     top: 22px;
-    left: 20px;
+    left: 21px;
     background-size: 30px 23px;
   }
   .main-nav__like-wrapper .main-nav__like {
@@ -1006,11 +1006,12 @@ input[type="password"] {
     box-sizing: border-box;
     height: 75px;
     width: 83px;
-    padding-top: 20px;
+    padding-top: 23px;
     padding-left: 35px;
   }
   .main-nav__like-wrapper .main-nav__like::before {
-    top: 22px;
+    top: 24px;
+    left: 26px;
   }
   .main-nav__like-wrapper {
     box-sizing: border-box;
@@ -1023,7 +1024,8 @@ input[type="password"] {
     text-transform: uppercase;
   }
   .main-nav__city span:first-child {
-    margin-left: -25px;
+    letter-spacing: 1px;
+    margin-left: -17px;
   }
   .main-nav__city-list {
     position: absolute;
@@ -1067,8 +1069,12 @@ input[type="password"] {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 13px;
+    padding-top: 15px;
+    margin-left: -2px;
     padding-bottom: 26px;
+  }
+  .main-nav__item:nth-child(4) {
+    margin-left: -2px;
   }
   .main-nav__item a {
     display: inline;
@@ -1563,5 +1569,8 @@ input[type="password"] {
   }
   .main-nav__city::before {
     display: none;
+  }
+  .page-header__logo-wrapper img {
+    margin-right: 20px;
   }
 }
